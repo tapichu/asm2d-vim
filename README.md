@@ -1,7 +1,8 @@
 # asm2d
 
 asm2d-vim is a lightweight Vim plugin to add syntax highlighting to assembly
-files for the asm2d assembler.
+files for the asm2d assembler.  It also configures the program to use for the
+`:make` command.
 
 Full Documentation: [:help asm2d](http://vim-doc.heroku.com/view?https://raw.github.com/tapichu/asm2d-vim/master/doc/asm2d.txt)
 
