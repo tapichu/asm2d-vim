@@ -3,6 +3,8 @@
 asm2d-vim is a lightweight Vim plugin to add syntax highlighting to assembly
 files for the asm2d assembler.
 
+Full Documentation: [:help asm2d](http://vim-doc.heroku.com/view?https://raw.github.com/tapichu/asm2d-vim/master/doc/asm2d.txt)
+
 ## Installation and Usage
 
 ### Using [pathogen](https://github.com/tpope/vim-pathogen)
@@ -10,7 +12,7 @@ files for the asm2d assembler.
 ``` bash
 cd ~/.vim
 mkdir -p bundle && cd bundle
-git clone git://github.com/tapicu/asm2d-vim.git
+git clone git://github.com/tapichu/asm2d-vim.git
 ```
 
 ### Using [vundle](https://github.com/gmarik/vundle)
