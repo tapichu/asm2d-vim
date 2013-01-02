@@ -25,7 +25,8 @@ CONTENTS                                                       *asm2dContents*
 Section 1: Usage                                                  *asm2dUsage*
 
 This plugin will automatically provide syntax highlighting for asm2d files
-(files ending in .s2d or .asm2d).
+(files ending in .s2d or .asm2d) and for MIF (Memory Initialization File)
+files (files ending in .mif).
 
 The |makeprg| will be configured so you can run the |:make| command on the
 current file.
@@ -71,6 +72,8 @@ Fork the project on GitHub and send a pull request.
 ==============================================================================
 Section 6: Changelog                                          *asm2dChangelog*
 
+v0.0.2
+    * MIF file syntax highlighting.
 v0.0.1
     * Syntax highlighting.
     * Very basic :make command integration.
