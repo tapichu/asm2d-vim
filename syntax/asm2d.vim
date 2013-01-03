@@ -22,7 +22,7 @@ syntax case match
 
 syntax match asm2dComment "\v;.*$"
 syntax match asm2dNumber "\v\d+"
-syntax match asm2dHexNumber "\v\$[0-9A-F]+"
+syntax match asm2dHexNumber "\v\$[0-9A-Fa-f]+"
 syntax match asm2dIdentifier "\v[a-zA-Z][a-zA-Z0-9_]*"
 syntax match asm2dConstant "\v\#[a-zA-Z][a-zA-Z0-9_]*"
 
