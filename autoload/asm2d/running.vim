@@ -2,7 +2,7 @@ function! asm2d#running#Asm2dCompileAndShowMifFile()
     let filename = expand('%:r') . ".mif"
     let buff_num = bufwinnr(filename)
 
-    silent execute "make" g:asm2d_make_params
+    execute "make" g:asm2d_make_params
 
     " Don't open a new window if the file is already open
     if buff_num >= 0
