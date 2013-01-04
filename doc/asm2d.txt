@@ -139,10 +139,11 @@ Fork the project on GitHub and send a pull request.
 ==============================================================================
 Section 7: Changelog                                          *asm2dChangelog*
 
-v0.0.4
+v0.1.0
     * Continue comments on the next line.
     * Fix error with syntax priority.
     * Highlight TODO and FIXME notes in comments.
+    * Compilation errors in quickfix window.
 v0.0.3
     * Add arithmetic operators to asm2d syntax.
     * Compile the MIF file every time it's opened.
