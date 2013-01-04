@@ -13,9 +13,10 @@ syntax keyword asm2dKeyword JSR
 syntax keyword asm2dKeyword LDAA LDAB LDB LDD LDG LDR LDX LDXA LDXB LDYA LDYB
 syntax keyword asm2dKeyword MUL
 syntax keyword asm2dKeyword NEGA
+syntax keyword asm2dKeyword PSHX PULX
 syntax keyword asm2dKeyword RMB RSTK RTS
 syntax keyword asm2dKeyword STAA STAB STD STX SUBA SUBD
-syntax keyword asm2dKeyword TDXA TDYA
+syntax keyword asm2dKeyword TDXA TDXB TDYA TDYB
 syntax keyword asm2dKeyword X XGDX
 syntax match asm2dKeyword "\v\.MAIN"
 syntax case match
