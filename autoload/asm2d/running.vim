@@ -1,6 +1,7 @@
 let g:quickfix_is_open = 0
 
 function! asm2d#running#Asm2dCompileAndShowMifFile()
+    execute "write"
     let filename = expand('%:r') . ".mif"
     let buff_num = bufwinnr(filename)
 

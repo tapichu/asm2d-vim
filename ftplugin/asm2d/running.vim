@@ -28,5 +28,7 @@ if g:asm2d_comment_next_line
     setlocal formatoptions+=ro
 endif
 
-silent execute "setlocal" "makeprg=" . g:asm2d_command . "\\ %"
-silent execute "setlocal" "shellpipe=" . "2>&1\\ \\|\\ tee\\ %s;exit\\ \\${PIPESTATUS[0]}"
+" :make command integration
+execute "setlocal" "makeprg=" . g:asm2d_command . "\\ %"
+setlocal shellpipe=2>&1\ \|\ tee\ %s;exit\ \${PIPESTATUS[0]}
+setlocal errorformat=ERROR:\ %m\ (at\ line:\ %l)
