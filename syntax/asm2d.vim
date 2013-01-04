@@ -34,9 +34,11 @@ syntax match asm2dHexNumber "\v\$[0-9A-Fa-f]+"
 
 syntax match asm2dIdentifier "\v[a-zA-Z][a-zA-Z0-9_]*"
 syntax match asm2dConstant "\v\#[a-zA-Z][a-zA-Z0-9_]*"
+syntax match asm2dCharacter "\v'[A-Z0-9.,;:&?!|#@<^]'"
 
 syntax match asm2dTodo contained "\v(TODO|FIXME|XXX):"
 
+highlight link asm2dCharacter Character
 highlight link asm2dComment Comment
 highlight link asm2dConstant Constant
 highlight link asm2dHexNumber Number
