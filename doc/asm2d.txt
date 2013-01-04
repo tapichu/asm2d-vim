@@ -141,6 +141,7 @@ Section 7: Changelog                                          *asm2dChangelog*
 
 v0.0.4
     * Continue comments on the next line.
+    * Fix error with syntax priority.
 v0.0.3
     * Add arithmetic operators to asm2d syntax.
     * Compile the MIF file every time it's opened.
