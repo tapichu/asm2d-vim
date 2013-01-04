@@ -20,7 +20,7 @@ syntax keyword asm2dKeyword X XGDX
 syntax match asm2dKeyword "\v\.MAIN"
 syntax case match
 
-syntax match asm2dComment "\v;.*$"
+syntax match asm2dComment "\v;.*$" contains=asm2dTodo
 
 syntax match asm2dOperator "\v\+"
 syntax match asm2dOperator "\v-"
@@ -33,6 +33,8 @@ syntax match asm2dHexNumber "\v\$[0-9A-Fa-f]+"
 syntax match asm2dIdentifier "\v[a-zA-Z][a-zA-Z0-9_]*"
 syntax match asm2dConstant "\v\#[a-zA-Z][a-zA-Z0-9_]*"
 
+syntax match asm2dTodo contained "\v(TODO|FIXME|XXX):"
+
 highlight link asm2dComment Comment
 highlight link asm2dConstant Constant
 highlight link asm2dHexNumber Number
@@ -40,5 +42,6 @@ highlight link asm2dIdentifier Identifier
 highlight link asm2dKeyword Keyword
 highlight link asm2dNumber Number
 highlight link asm2dOperator Operator
+highlight link asm2dTodo Todo
 
 let b:current_syntax = "asm2d"
