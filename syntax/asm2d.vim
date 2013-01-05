@@ -19,7 +19,7 @@ syntax keyword asm2dKeyword PSHA PSHB PSHCB PSHCG PSHCR PSHX PSHXA PSHXB PSHYA P
 syntax keyword asm2dKeyword PULA PULB PULCB PULCG PULCR PULX PULXA PULXB PULYA PULYB
 syntax keyword asm2dKeyword RMB RSTK RTS
 syntax keyword asm2dKeyword STAA STAB STD STX SUBA SUBD
-syntax keyword asm2dKeyword TDXA TDXB TDYA TDYB
+syntax keyword asm2dKeyword TDX TDXA TDXB TDYA TDYB
 syntax keyword asm2dKeyword X XGDX
 syntax match asm2dKeyword "\v\.MAIN"
 syntax case match
