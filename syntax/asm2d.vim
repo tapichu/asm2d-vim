@@ -17,7 +17,7 @@ syntax keyword asm2dKeyword MUL
 syntax keyword asm2dKeyword NEGA
 syntax keyword asm2dKeyword PSHA PSHB PSHCB PSHCG PSHCR PSHX PSHXA PSHXB PSHYA PSHYB
 syntax keyword asm2dKeyword PULA PULB PULCB PULCG PULCR PULX PULXA PULXB PULYA PULYB
-syntax keyword asm2dKeyword RMB RSTK RTS
+syntax keyword asm2dKeyword RMB RNDA RSTK RTS
 syntax keyword asm2dKeyword STAA STAB STD STX SUBA SUBD
 syntax keyword asm2dKeyword TDX TDXA TDXB TDYA TDYB
 syntax keyword asm2dKeyword X XGDX
