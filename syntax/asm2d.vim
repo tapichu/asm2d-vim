@@ -4,7 +4,7 @@ endif
 
 syntax case ignore
 syntax keyword asm2dKeyword ABA ABX ADDD ASRD
-syntax keyword asm2dKeyword BCS BEQ BHI BKE BLO BNE BRA
+syntax keyword asm2dKeyword BCS BEQ BHI BKE BLO BMI BNE BPL BRA
 syntax keyword asm2dKeyword CLRS CPK CPX
 syntax keyword asm2dKeyword DRCL DRHLN DRRCT DRSYM DRVLN
 syntax keyword asm2dKeyword EQU
