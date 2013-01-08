@@ -1,6 +1,5 @@
 " Vim compiler file
 " Compiler:         asm2d Compiler
-" Maintainer:       Eduardo López Biagi <eduardo.biag@gmail.com>
 
 if exists("current_compiler")
   finish

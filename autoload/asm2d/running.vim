@@ -1,5 +1,11 @@
 let g:quickfix_is_open = 0
 
+function! OpenQuickFixWindow()
+    let g:quickfix_return_to_window = winnr()
+    copen
+    let g:quickfix_is_open = 1
+endfunction
+
 function! asm2d#running#Asm2dCompileAndShowMifFile()
     execute "write"
     let filename = expand('%:r') . ".mif"
@@ -14,10 +20,14 @@ function! asm2d#running#Asm2dCompileAndShowMifFile()
     endif
 
     if v:shell_error
-        let g:quickfix_return_to_window = winnr()
-        copen
-        let g:quickfix_is_open = 1
+        call OpenQuickFixWindow()
     else
+        let messages = getqflist()
+        if len(messages) > 0
+            call OpenQuickFixWindow()
+            wincmd p
+        endif
+
         " Don't open a new window if the file is already open
         if buff_num >= 0
             silent execute buff_num . "wincmd w"
