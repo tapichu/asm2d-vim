@@ -139,6 +139,9 @@ Fork the project on GitHub and send a pull request.
 ==============================================================================
 Section 7: Changelog                                          *asm2dChangelog*
 
+v0.1.2
+    * New keywords in asm2d syntax.
+    * Line numbers in warning messages.
 v0.1.1
     * New keywords in asm2d syntax.
     * Add character constants to syntax.

@@ -1,7 +1,3 @@
-if !exists("g:asm2d_command")
-    let g:asm2d_command = 'asm2d'
-endif
-
 if !exists("g:asm2d_make_params")
     let g:asm2d_make_params = ''
 endif
@@ -28,7 +24,4 @@ if g:asm2d_comment_next_line
     setlocal formatoptions+=ro
 endif
 
-" :make command integration
-execute "setlocal" "makeprg=" . g:asm2d_command . "\\ %"
-setlocal shellpipe=2>&1\ \|\ tee\ %s;exit\ \${PIPESTATUS[0]}
-setlocal errorformat=ERROR:\ %m\ (at\ line:\ %l),WARNING:\ %m\ (at\ line:\ %l)
+compiler asm2d
