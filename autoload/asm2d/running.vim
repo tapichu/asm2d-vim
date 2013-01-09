@@ -23,7 +23,7 @@ function! asm2d#running#Asm2dCompileAndShowMifFile()
         call OpenQuickFixWindow()
     else
         let messages = getqflist()
-        if len(messages) > 0
+        if g:asm2d_show_warnings && len(messages) > 0
             call OpenQuickFixWindow()
             wincmd p
         endif
