@@ -19,5 +19,8 @@ CompilerSet errorformat=
     \%tRROR:\ %m\ (at\ line:\ %l),
     \%tARNING:\ %m\ (at\ line:\ %l)
 
+sign define asm2dError   text=>> texthl=Error
+sign define asm2dWarning text=>> texthl=Todo
+
 let &cpo = s:cpo_save
 unlet s:cpo_save

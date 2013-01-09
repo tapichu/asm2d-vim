@@ -150,6 +150,7 @@ Section 7: Changelog                                          *asm2dChangelog*
 
 v0.1.2
     * New keywords in asm2d syntax.
+    * Mark lines with errors or warnings in the source file.
     * Type of error in quickfix window.
     * Line numbers in warning messages.
     * Open quickfix window when there are compilation warnings.
