@@ -16,8 +16,8 @@ endif
 execute "CompilerSet" "makeprg=" . g:asm2d_command . "\\ %"
 CompilerSet shellpipe=2>&1\ \|\ tee\ %s;exit\ \${PIPESTATUS[0]}
 CompilerSet errorformat=
-    \ERROR:\ %m\ (at\ line:\ %l),
-    \WARNING:\ %m\ (at\ line:\ %l)
+    \%tRROR:\ %m\ (at\ line:\ %l),
+    \%tARNING:\ %m\ (at\ line:\ %l)
 
 let &cpo = s:cpo_save
 unlet s:cpo_save
